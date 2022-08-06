@@ -128,17 +128,17 @@ unit = "mm"
 
 [gwrite.DMPL-R]
 document_start = ";: "
-document_start = "IN;"
 layer_start = "P{layer_id:d},A U 0,0 R " 
 segment_first = "U {dx:.0f},{dy:.0f} D "
 segment = "{dx:.0f},{dy:.0f},"
 segment_last ="{dx:.0f},{dy:.0f} "
 document_end = " P0,;:\n"
+# 40 = 0.025"/step
 scale_x = 40
 scale_y = 40
 unit = "mm"
 invert_y = true
-info = """Output DM/PL relative co-ordinates NB. This will not take care of page margins etc within the machine.
+info = """Output DM/PL RELATIVE co-ordinates NB. This will not take care of page margins etc within the machine.
 
 Ensure that the svg layout is landscape.
 
@@ -146,17 +146,17 @@ Pen numbers will be taken from layer numbers"""
 
 [gwrite.DMPL-A]
 document_start = ";: "
-document_start = "IN;"
 layer_start = "P{layer_id:d},A U 0,0 " 
 segment_first = "U {dx:.0f},{dy:.0f} D "
 segment = "{dx:.0f},{dy:.0f},"
 segment_last ="{dx:.0f},{dy:.0f} "
 document_end = " P0,;:\n"
+# 40 = 0.025"/step
 scale_x = 40
 scale_y = 40
 unit = "mm"
 invert_y = true
-info = """Output DM/PL relative co-ordinates NB. This will not take care of page margins etc within the machine.
+info = """Output DM/PL ABSOLUTE co-ordinates NB. This will not take care of page margins etc within the machine.
 
 Ensure that the svg layout is landscape.
 
