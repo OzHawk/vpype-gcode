@@ -147,9 +147,9 @@ Pen numbers will be taken from layer numbers"""
 [gwrite.DMPL-A]
 document_start = ";: "
 layer_start = "P{layer_id:d},A U 0,0 " 
-segment_first = "U {dx:.0f},{dy:.0f} D "
-segment = "{dx:.0f},{dy:.0f},"
-segment_last ="{dx:.0f},{dy:.0f} "
+segment_first = "U {x:.0f},{y:.0f} D "
+segment = "{x:.0f},{y:.0f},"
+segment_last ="{x:.0f},{y:.0f} "
 document_end = " P0,;:\n"
 # 40 = 0.025"/step
 scale_x = 40
